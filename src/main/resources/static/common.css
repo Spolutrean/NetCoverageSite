@@ -1,0 +1,305 @@
+html{
+    scroll-behavior:smooth
+}
+
+html,body {
+    height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 10001;
+    background-color: white;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.informationContainer {
+    width: 15%;
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.aboutUsContainer, .contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutUsText, .contactText{
+    font-family: Nunito, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #00B1B1;
+    margin-left: 5px;
+}
+
+.gridView {
+    display: grid;
+    grid-template-rows: 15vh 85vh 85vh 85vh;
+}
+
+.mapDiv {
+    width: 100%;
+    background: white;
+}
+
+.teamDiv {
+    width: 100%;
+    background: white;
+}
+
+.teamBlock {
+    width: 100%;
+    height: 85vh;
+    margin-top: 25px;
+}
+
+.descriptionDiv {
+    margin-top: 10vh;
+    width: 60%;
+    height: 33vh;
+    background-image: url("designImages/descriptionBackground.png");
+    background-size: 100% 100%;
+}
+
+.descriptionDiv span {
+    display: block;
+
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.84);
+
+    border-bottom: 1.5px solid #FFFFFF;
+}
+
+.descriptionDiv p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+
+    color: white;
+}
+
+.ourTeamDiv {
+    width: 100%;
+    margin-top: 5vh;
+    height: 35vh;
+}
+
+.ourTeamDiv span {
+    display: block;
+
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #00B1B1;
+
+    border-bottom: 1px solid #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ourTeamPeople {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+}
+
+.person img {
+    align-self: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    border: 1px solid #0097A7;
+}
+
+
+.person .name {
+    margin-top: 2vh;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #00B1B1;
+}
+
+.person .role {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.contactsDiv {
+    width: 100%;
+    height: 85vh;
+    background: white;
+    padding-top: 15px;
+}
+
+.centeredContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.verticalDelimiter {
+    width: 6px;
+    height: 31px;
+
+    background: #00B1B1;
+}
+
+.contactsBigFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactsBigFlex img {
+    width: 30%;
+    height: 100%;
+    margin-top: auto;
+}
+
+.contactToUs {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.horizontalDelimiter {
+    margin: auto;
+    alignment: center;
+    width: 20%;
+    height: 4px;
+
+    background: rgba(0, 0, 0, 0.63);;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.socialNetworks {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.iconContainer {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.iconContainer img {
+    width: auto;
+    object-fit: cover;
+}
+
+.qrContainer {
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrContainer img {
+    width: 25vh;
+    height: 25vh;
+    display: none;
+}
+
+.logo {
+    margin: 20px;
+}
+
+.teamAnchor {
+    display: block;
+    position: relative;
+    top: -15vh;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+#watchThis {
+    animation: 12s ease 5s infinite normal both running watchThisBounds;
+    position: relative;
+    margin: -50px auto 0;
+    z-index: 10000;
+}
+
+@keyframes watchThisBounds {
+    3% {
+        transform: translateY(21px);
+    }
+    6% {
+        transform: translateY(0px);
+    }
+    9% {
+        transform: translateY(21px);
+    }
+    12% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(21px);
+    }
+    18% {
+        transform: translateY(0px);
+    }
+
+}
